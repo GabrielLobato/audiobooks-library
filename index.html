@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audiobook - Dom Casmurro</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Biblioteca Audiobooks</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
-    <div class="container-aplicativo">
-        <img id='capa' alt="Capa do livro." src="./images/dom-casmurro.jpeg"></img>
-        <audio id='audio-capitulo'></audio>
-        <div id="informacoes-faixa">
-            <div id="capitulo">Sessão 1</div>
-            <div id="nome-autor">Machado de Assis</div>
-            <a id = tempo></a>
-            <input type="range" id="barra-progresso" min="0" value="0">
+    <div class="main-container">
+        <div class="texto">
+            <h1>Selecione Um Audiobook</h1>
         </div>
-        <div id="container-botoes">
-            <button id="anterior" class="bi bi-skip-start-fill"></button>
-            <button id="play-pause" class="bi bi-play-circle-fill"></button>
-            <button id="proximo" class="bi bi-skip-end-fill"></button>
+        <div class="wrapper">
+        <div class="main-container__content">
+            <a href="./src/pages/dom-casmurro.html">
+            <img class="imagem" src="./src/images/dom-casmurro.jpeg" alt="Dom Casmurro">
+            </a>
+        </div>
+        <div class="main-container__content">
+            <a href="./src/pages/braz-cubas.html">
+            <img class="imagem" src="./src/images/braz-cubas.jpg" alt="Memórias Póstumas de Braz cubas">
+            </a>
         </div>
     </div>
-    <script src="./script.js"></script>
+    </div>
 </body>
 </html>

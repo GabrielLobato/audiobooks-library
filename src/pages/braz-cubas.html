@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiobook - Dom Casmurro</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- <button class="bi bi-chevron-left" id="voltar"></button> -->
+    <div class="header">
+    <a href="../../index.html" class="bi bi-house-fill" id="home"></a>
+    </div>
+    <div class="main-container">
+    <div class="container-aplicativo">
+        <img id='capa' alt="Capa do livro." src="../images/braz-cubas.jpg"></img>
+        <audio id='audio-capitulo'></audio>
+        <div id="informacoes-faixa">
+            <div id="capitulo">Seção 1 / 32</div>
+            <div id = tempo>00:00 / 00:00</div>
+            <input type="range" id="barra-progresso" min="0" value="0">
+        </div>
+        <div id="container-botoes">
+            <button id="anterior" class="bi bi-skip-start-fill"></button>
+            <button id="play-pause" class="bi bi-play-circle-fill"></button>
+            <button id="proximo" class="bi bi-skip-end-fill"></button>
+        </div>
+    </div>
+    </div>
+    <script src="../js/braz-cubas.js"></script>
+</body>
+</html>
